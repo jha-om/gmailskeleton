@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <div class="header">
+        <!--Top header-->
+        <div class="top_header">
+            <abbr title="Menu">
+                <span class="material-icons">
+                    menu
+                </span>
+            </abbr>
+            <img src="https://cdn.vox-cdn.com/thumbor/Tbqi3ZF9Qz0fTJIUvkgQe3FdN0k=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21939811/newgmaillogo.jpg"
+                alt="gmail">
+        </div>
+        <!--middle Header-->
+        <div class="middle_header">
+            <span class="material-icons">
+                search
+            </span>
+            <input type="text" placeholder="Search Mail">
+            <abbr title="Manage Search">
+                <span class="material-icons" style="cursor:pointer">
+                    manage_search
+                </span>
+            </abbr>
+        </div>
+        <!--Bottom Header-->
+        <div class="bottom_header">
+            <div class="bottom-edit">
+                <abbr title="Help">
+                    <span class="material-icons">
+                        help_outline
+                    </span>
+                </abbr>
+            </div>
+            <div class="bottom-edit">
+                <abbr title="Settings">
+                    <span class="material-icons">
+                        settings
+                    </span>
+                </abbr>
+            </div>
+            <div class="bottom-edit">
+                <abbr title="Account">
+                    <span class="material-icons">
+                        account_circle
+                    </span>
+                </abbr>
+            </div>
+            <div class="bottom-edit">
+                <abbr title="Logout">
+                    <span class="material-icons">
+                        logout
+                    </span>
+                </abbr>
+            </div>
+        </div>
+    </div>
+    <!--Header Ends-->
+
+    <!--middle right-->
+    <div class="main-middle">
+        <div class="middle">
+            <div class="right">
+                <div id="compose">
+                    <abbr title="Compose">
+                        <span class="material-icons">
+                            add
+                        </span>
+                    </abbr>
+                    Compose
+                </div>
+                <div class="mid">
+                    <span class="material-icons">
+                        inbox
+                    </span>
+                    Inbox
+                    <!--number to be added-->
+                </div>
+                <div class="mid">
+                    <span class="material-icons">
+                        star
+                    </span>
+                    Starred
+                </div>
+                <div class="mid">
+                    <span class="material-icons">
+                        schedule
+                    </span>
+                    Snoozed
+                </div>
+                <div class="mid">
+                    <span class="material-icons">
+                        send
+                    </span>
+                    Sent
+                </div>
+                <div class="mid">
+                    <span class="material-icons">
+                        drafts
+                    </span>
+                    Drafts
+                </div>
+                <div class="mid">
+                    <span class="material-icons">
+                        label
+                    </span>
+                    [Imap]/Trash
+                </div>
+                <div class="mid">
+                    <span class="material-icons">
+                        label
+                    </span>
+                    Conversation History
+                </div>
+                <div id="bottom">
+                    <abbr title="More">
+                        <span class="material-icons">
+                            expand_more
+                        </span>
+                    </abbr>
+                    More
+                </div>
+                <div class="right-bottom">
+                    Meet
+                    <div id="text">
+                        <span class="material-icons">
+                            video_call
+                        </span>
+                        New Meeting
+                    </div>
+                    <div id="text">
+                        <span class="material-icons">
+                            keyboard
+                        </span>
+                        Join a Meeting
+                    </div>
+                </div>
+                <div class="last">
+                    Hangouts
+                </div>
+                <div id="acc">
+                    <abbr title="Account">
+                        <span class="material-icons">
+                            account_circle
+                        </span>
+                    </abbr>
+                    User
+                </div>
+            </div>
+        </div>
+        <!--middle right ends-->
+
+        <!--middle middle-->
+        <div class="email-top">
+            <div class="email-settings">
+                <div class="left">
+                    <abbr title="Main Menu">
+                        <input type="checkbox" id="checkbox">
+                    </abbr>
+                    <abbr title="Select">
+                        <span class="material-icons">
+                            arrow_drop_down
+                        </span>
+                    </abbr>
+                    <abbr title="Refresh">
+                        <span class="material-icons">
+                            refresh
+                        </span>
+                    </abbr>
+                    <abbr title="More">
+                        <span class="material-icons">
+                            more_vert
+                        </span>
+                    </abbr>
+                </div>
+                <div class="middle-right">
+                    1-15 of 5,969
+                    <abbr title="Newer">
+                        <span class="material-icons">
+                            chevron_left
+                        </span>
+                    </abbr>
+                    <abbr title="Older">
+                        <span class="material-icons">
+                            chevron_right
+                        </span>
+                    </abbr>
+                    <abbr title="Input tools on/off(Ctrl-shift-K)">
+                        <span class="material-icons">
+                            keyboard
+                        </span>
+                    </abbr>
+                    <abbr title="Select input tool">
+                        <span class="material-icons ">
+                            arrow_drop_down
+                        </span>
+                    </abbr>
+                </div>
+            </div>
+            <!--middle middle ends-->
+
+            <!--main middle section starts-->
+            <div class="main-email">
+                <div class="main-top first-selected">
+                    <span class="material-icons">
+                        inbox
+                    </span>
+                    <h4>Primary</h4>
+                </div>
+                <div class="main-top second">
+                    <span class="material-icons">
+                        people
+                    </span>
+                    <h4>Social</h4>
+                </div>
+                <div class="main-top third">
+                    <span class="material-icons">
+                        info
+                    </span>
+                    <h4>Update</h4>
+                </div>
+            </div>
+            <div class="main body">
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Google Play</h3>
+                    <div>
+                        <span class="changes">
+                            <span style="font-weight: 900;"> Better together: Wear OS + Android </span>- Manage your day
+                            and track your health right from your wrist. Google Play The power of Android with a Wear
+                            OS...
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">3:35 PM</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Flipkart</h3>
+                    <div>
+                        <span class="changes-1">
+                            <span style="font-weight: 900;">A treat from Santa before Christmas</span> - Santa is so
+                            thoughtful, isn't he? Flipkart.com Flipkart.com Flipkart.com Flipkart.com
+                            Flipkart.com Flipkart.com
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">6:30 PM</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>PharmEasy</h3>
+                    <div>
+                        <span class="changes">
+                            <span style="font-weight: 900;">CHANCE to win iPhone 13 and more other
+                                gifts.&#128525;</span> -
+                            Order
+                            your medicines
+                            during the YES sale & redeem exciting rewards.Click here to unsubscribe!...
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">7:57 PM</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Manchester <br> United</h3>
+                    <div>
+                        <span class="changes">
+                            <span style="font-weight: 900;">Team news for Young Boys encounter</span> -
+                            Matchday Preview:Young Boys | Rangnick's Pre-Match Press Conference | Training Boost & more
+                            View online.....
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">Dec 8</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Udemy</h3>
+                    <div>
+                        <span class="changes-1">
+                            <span style="font-weight: 900;">Personal Course Catalog is here </span> -
+                            We've custom picked 15 courses based on world's popular interests - to help you reach your
+                            goals. Personalised picks..
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">Dec 8</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Manchester <br> United</h3>
+                    <div>
+                        <span class="changes-1">
+                            <span style="font-weight: 900;">United appoint Rangnick as interim manager </span> -
+                            Matchday Review: Chelsea | 2 Min Highlights | Carrick Reaction | De Gea Interview &
+                            more.......
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">Dec 8</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Flipkart</h3>
+                    <div>
+                        <span class="changes-1">
+                            <span style="font-weight: 900;">Travelling without these? No chance!</span> -
+                            Must-haves for every journey... Flipkart.com Flipkart.com Flipkart.com Flipkart.com
+                            Flipkart.com Flipkart.com
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">Dec 8</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Mintable</h3>
+                    <div>
+                        <span class="changes-1">
+                            <span style="font-weight: 900;">This Week's Hot NFT's on Mintable - December 8</span> -
+                            Just for you: curated NFT'S from Mintable . View this email in your browser Email image
+                            Platform
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">Dec 8</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Microsoft <br> Store</h3>
+                    <div>
+                        <span class="changes-1">
+                            <span style="font-weight: 900;">Cyber Monday starts now </span> -
+                            Start shopping today and get Free shipping and extended free returns and you will also get a
+                            6-month membership............
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">Dec 8</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Flipkart</h3>
+                    <div>
+                        <span class="changes-1">
+                            <span style="font-weight: 900;">From AM to PM, you will need'em</span> -
+                            Skincare routine for everyone... Flipkart.com Flipkart.com Flipkart.com Flipkart.com
+                            Flipkart.com Flipkart.com...
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">Dec 8</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>PharmEasy</h3>
+                    <div>
+                        <span class="changes">
+                            <span style="font-weight: 900;">ARRIVED: essential pet care! &#128588;</span>
+                            Now Available: A wide range of pet accessories, pet food, pet grooming and more and more!
+                            Click here
+                            to unsubscribe!
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">Dec 8</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Udemy</h3>
+                    <div>
+                        <span class="changes-1">
+                            <span style="font-weight: 900;">&#128293; Cyber deals: Courses at less price, buy more, save
+                                more &#128293;</span> -
+                            It's cyber deal time. Courses start from as little as a price a large pizza, buy this as
+                            soon..
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">Dec 8</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Bitdefender</h3>
+                    <div>
+                        <span class="changes">
+                            <span style="font-weight: 900;">Cyber Monday Super-Sale Deals! </span> -
+                            Final Hours! There's still time... Our biggest sale of the year is almost over. Don't worry
+                            - we've saved the best for last!..
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">Dec 8</span>
+                </div>
+                <div class="email-main">
+                    <span class="material-icons">
+                        drag_indicator
+                    </span>
+                    <input type="checkbox">
+                    <abbr title="Not Starred">
+                        <span class="material-icons star">
+                            star_border
+                        </span>
+                    </abbr>
+                    <span class="material-icons">
+                        label
+                    </span>
+                    <h3>Udemy</h3>
+                    <div>
+                        <span class="changes-1">
+                            <span style="font-weight: 900;">Personal Course Catalog is here </span> -
+                            We've custom picked 5 courses based on world's popular interests - to help you reach your
+                            goals. Personalised picks......
+                        </span>
+                    </div>
+                    <span style="font-weight: 800;" class="time">Nov 29</span>
+                </div>
+            </div>
+            <!--main middle section ends-->
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

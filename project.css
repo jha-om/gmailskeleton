@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    height: 100vh;
+    overflow-y: hidden;/*I do not know this property*/
+}
+
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgba(245, 245, 245);
+}
+
+.top_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.top_header img{
+    width:200px;
+    margin-left: 5px;
+}
+
+.middle_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.7; /*I haven't studied this property*/
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;   
+    color: gray; 
+}
+.middle_header input{
+    border: none;
+    width: 100%;
+    outline: none;/*I haven't studied this property*//*This property removes the box which comes after using input property*/
+    background-color: transparent;
+}
+
+.bottom_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bottom_header span{
+    width: 30px;
+    height: 15px;
+    padding: 10px;
+}
+
+.bottom-edit:hover{
+    border: 0.5px dotted white;
+    border-radius: 30%;
+    background-color: whitesmoke;
+}
+
+/*header ends*/
+
+/*midddle right*/
+.main-middle{
+    display: flex;
+    height: 100vh;
+    flex: 1;
+    overflow: scroll;/*I do not know about this property*/
+}
+
+.middle {
+    flex: 0.4;/*this property will only use 30% of the body content*/
+    max-width: 300px;/*unknown property*/
+}
+.right{
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right #compose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    font-weight: 500px;
+    border-radius: 30px;
+    background-color:whitesmoke;
+    box-shadow: 0.2em 0.3em 0.2em -0.1em gray;
+    cursor: pointer;
+}
+
+.right #compose:hover{
+    background-color: rgba(170, 170, 170, 0.808);
+    transition: 1s;
+    transform: translateY(-0.3em);
+}
+
+
+.mid , #bottom{
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+.right .mid:hover{
+    color: red;
+    width: 200px;
+    border: 1px solid rgb(255,109,109);
+    border-radius: 15px;
+    background-color: rgb(255, 109, 109);
+    transform: translateX(-0.5em);
+    transition: 0.1s;
+}
+
+
+#acc{
+    display: flex;
+    align-items: center;
+}
+.right-bottom{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 800;
+    cursor:default;
+}
+
+#text{
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+#text:hover{
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    width: 200px;
+    margin: 5px;
+    transform: translate(-0.3em);
+    transition: 0.2s;
+}
+
+.last{
+    padding: 5px;
+    font-weight: 800;
+}
+/*middle right ends*/
+
+/*middle middle top*/
+.email-top{
+    padding: 15px;
+    margin: 10px;
+    flex: 1;
+    overflow-y: hidden;
+}
+.email-settings{
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    padding-bottom: 2px;
+    max-height: 50px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left #checkbox{
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 20px;
+    margin-top: 20px;
+    border: 1px solid silver;
+    padding: 25px;
+}
+
+.email-settings .material-icons{
+    margin: 5px;
+    cursor: pointer;
+}
+.left span:hover{
+    border: 1px solid silver;
+    border-radius: 50%;
+    background-color: rgba(212, 209, 209, 0.945);
+    transition: border-radius 0.2s;
+}
+
+.middle-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.middle-right span:hover{
+    border: 1px solid gray;
+    border-radius: 30%;
+    background-color: rgb(189, 189, 189);
+    transition: 0.3s;
+}
+
+/*middle middle top ends*/
+
+/*middle*3 starts*/
+
+.main-top{
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom-width: 2px;
+    min-height: 50px;
+    color: gray;
+    border-width: 0;
+}
+
+.main-email{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom:1px solid whitesmoke;
+}
+
+.main-top h4{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-right: 150px;
+}
+
+.first-selected:hover{
+    color: red;
+    border-bottom: 3px solid red;
+    background-color: whitesmoke;
+}
+.second:hover{
+    color:rgb(255, 157, 30);
+    border-bottom: 3px solid rgb(255, 157, 30);
+    background-color: whitesmoke;
+}
+.third:hover{
+    color: rgb(22, 104, 255);
+    border-bottom: 3px solid rgb(22, 104, 255);
+    background-color: whitesmoke;
+}
+
+.email-main{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 5px solid whitesmoke;
+}
+.email-main .material-icons{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.email-main:hover{
+    box-shadow: 0 4px 4px -1.5px rgba(0, 0, 0, 0.2);
+}
+
+.changes{
+    margin: 30px;
+}
+
+.changes-1{
+    margin: 55px;
+}
+
+.time{
+    margin: auto;
+}
+/*middle*3 ends*/    
